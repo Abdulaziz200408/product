@@ -1,0 +1,87 @@
+.container_product {
+  max-width: 1450px;
+  margin: auto;
+  padding: 20px;
+}
+/* Scrollbar'ni yashirish */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE va Edge uchun */
+  scrollbar-width: none; /* Firefox uchun */
+}
+
+.crcle_menu {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+}
+
+.crcle_menu_user {
+  background-color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 4px 17px -5px rgba(34, 60, 80, 0.2);
+}
+
+.About_button {
+  width: auto;
+  height: 42px;
+  top: 186px;
+  left: 437px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  padding: 10px;
+  background: #eeeded;
+}
+
+.About_button:hover {
+  width: auto;
+  height: 42px;
+  top: 186px;
+  left: 437px;
+  color: white;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  padding: 10px;
+  background: linear-gradient(180deg, #ffb12a 0%, #ef8100 100%);
+  transition: 0.3 ease;
+}
+
+.About_button_activ {
+  width: auto;
+  height: 42px;
+  top: 186px;
+  left: 437px;
+  color: white;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  padding: 10px;
+  background: linear-gradient(180deg, #ffb12a 0%, #ef8100 100%);
+  transition: 0.3 ease;
+}
+
+/* Custom CSS if needed */
+.mini_card img {
+  border-radius: 8px;
+}

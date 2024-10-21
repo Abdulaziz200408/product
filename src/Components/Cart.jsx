@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CiHeart } from "react-icons/ci";
 import { AiOutlineShopping } from "react-icons/ai";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { GrDocumentText } from "react-icons/gr";
 
-function Favorites({ favourites, removeFromFavorites }) {
+function Favorites({ cart, removeFromCart }) {
   return (
     <div>
-      {favourites?.length === 0 ? (
+      {cart?.length === 0 ? (
         <p>Sevimli mahsulotlar yo'q.</p>
       ) : (
         <ul className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-          {favourites.map((item) => (
+          {cart.map((item) => (
             <div
               key={item.id}
               className="border rounded-xl shadow-lg p-4 bg-white transition-transform duration-200 hover:scale-105"
@@ -31,10 +31,11 @@ function Favorites({ favourites, removeFromFavorites }) {
                   style={{ background: "#FFB12A" }}
                   className="flex-1 text-white font-semibold px-4 py-2 rounded-lg flex items-center justify-center gap-2"
                 >
-                  <AiOutlineShopping />В корзину
+                  <GrDocumentText />
+                  Оформить
                 </button>
                 <button
-                  onClick={() => removeFromFavorites(item.id)}
+                  onClick={() => removeFromCart(item.id)}
                   style={{ color: "#FFB12A" }}
                   className="border font-semibold px-4 py-2 rounded-lg flex items-center justify-center gap-2"
                 >

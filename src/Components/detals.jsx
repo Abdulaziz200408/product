@@ -46,7 +46,7 @@ function Details() {
       <img
         style={{
           maxHeight: "300px",
-          objectFit: "contain", // Rasmni yaxshiroq joylashtirish uchun
+          objectFit: "contain",
         }}
         src={item.images[0]}
         alt={item.title}
